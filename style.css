@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+body p{
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: 10px;
+}
+body p span{
+    color:#0080ff;
+}
+.nav-menu{
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu>svg{
+    margin-right: 30px;
+    opacity: 0.7;
+    width: 12px;
+    transition: 0.2s ease-in-out;
+}
+.nav-menu>svg:hover{
+    opacity: 1;
+}
+.nav-container .nav-menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 39px;
+    font-size: 10px;
+    gap: 40px;
+}
+section{
+    margin-top: 15px;
+    background-color:#f5f5f7;
+    height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    line-height: 25px;
+}
+section h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 15px 0;
+}
+section h1+p{
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+section h1+p+p{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgb(103, 103, 103);
+}
+.btn-learnmore .btn-1{
+    padding: 10px 10px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    width: 98px;
+    border-radius: 30px;
+    margin-right:18px ;
+}
+
+.btn-learnmore .btn-2{
+    padding: 10px 10px;
+    border-radius: 28px;
+    width: 120px;
+    border: 1px solid #0071e3;
+    color: #0071e3;
+    background-color: transparent;
+    transition: 0.2s ease-in-out background-color;
+}
+
+.btn-learnmore .btn-2:hover{
+    background-color: #0071e3;
+    color: white;
+}
+.main-img{
+    position:relative;
+    top:50px;
+    background-image: url('./Images/iphones.png');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self:self-end;
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+    background-color: #f5f5f7;
+}
+.section-2 .btn-2{
+    padding: 10px 10px;
+    border-radius: 28px;
+    width: 120px;
+    border: 1px solid #0071e3;
+    color: #0071e3;
+    background-color: transparent;
+    transition: 0.2s ease-in-out background-color;
+    margin: 15px 0;
+}
+.section-2 .btn-2:hover{
+    background-color: #0071e3;
+    color: white;
+}
+.section-2 .mac-bg{
+    height: 400px;
+    background-image: url('./Images/mac-bg1.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.section-3{
+    height:500px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    line-height: 22px;
+
+}
+.text-content>h1{
+    margin-bottom: 15px;
+}
+.section-3 .text-content > p{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.text-content>h1>i{
+    margin-right: 8px;
+}
+.section-3>img{
+    width: 230px;
+}
+.section-3>.btn-1{
+    padding: 10px 10px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    width: 98px;
+    border-radius: 30px;
+    margin-right:18px ;
+}
+.grid-container{
+    margin: 10px 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 1200px;
+    gap: 10px;
+}
+.grid-container button{
+    padding: 10px 10px;
+    border: none;
+    background-color: #0071e3;
+    color: white;
+    width: 98px;
+    border-radius: 30px;
+    margin-right:18px ;
+    margin-bottom: 25px;
+}
+.box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.box1{
+    background-image: url('./Images/box1.jpg');
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap:10px;
+
+}
+.box1 > p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.box2{
+    background-image: url('./Images/box2.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 28px;
+   
+}
+.box2>h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box3{
+    background-image: url('./Images/box3.jpg');
+    color: white;
+    text-align: center;   
+    padding-top: 30px;
+}
+.box3>h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.box4{
+    background-image: url('./Images/box4.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 28px;
+    padding-top: 15px;
+        
+}
+.box4>h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box5{
+    background-image: url('./Images/box5.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 28px;
+    color: white;
+    padding-top: 5px;
+}
+.box5>h3{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.box6{
+    background-image: url('./Images/box6.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 28px;
+    padding-top: 10px;
+
+    
+}
+.box6 h3{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+    height: 100vh;
+    background-color: #f5f5f7;
+   
+}
+.text-content{
+    width: 900px;
+    margin:10px auto;
+}
+
+.text-content p{
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    opacity: 0.6;
+}
+.final-footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 1020px;
+}
+.final-footer ul{
+    list-style: none;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    opacity: 0.6;
+}
+.final-footer ul .f-1{
+    font-weight: bold;
+}
+
+.footer-section{
+    margin-top: 10px;
+    width: 900px;
+}
+.footer-section p{
+    text-align: left;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    opacity: 0.6;
+}
